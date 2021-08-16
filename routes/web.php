@@ -18,6 +18,4 @@ Route::redirect('/', 'articles');
 
 Route::resource('articles', ArticlesController::class);
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
