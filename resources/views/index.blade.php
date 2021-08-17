@@ -26,7 +26,7 @@
       <tbody>
       @foreach($articles as $key=>$article)
           <tr>
-              <th scope="row" class="col-sm-1">{{ $article->id }}</th>
+              <th scope="row" class="col-sm-1">{{ $key + 1 }}</th>
               <td class="col-sm-3">
                   <h6>{{ Str::limit($article->title, 50) }}</h6>
               </td>
